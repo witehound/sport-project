@@ -38,9 +38,17 @@ const product_array = [
   const addedToCart = []
 
 
+  //for addtocart
+  let finalItemId 
+//   const letsAdd = (item) => {
+//     finalItemId =item
+//     return finalItemId
+//   }  
+
+//   console.log(finalItemId)
 
   //function to render element that holds each from from product_array
-  const renderAnItem = (item,container) => {
+  const renderAnItem = (item,container,finalItemId) => {
      
       const product_div = document.createElement('div')
       product_div.setAttribute('class', 'product_div')
@@ -70,10 +78,11 @@ const product_array = [
       productPrice.innerText = item.price;
 
     
-    //   const addTocart = document.createElement('button')
-    //   addTocart.setAttribute('class','product_div_add')
-    //   addTocart.innerText = '+'
-    
+      const addTocart = document.createElement('button')
+      addTocart.setAttribute('class','product_div_add')
+      addTocart.innerText = '+'
+
+    //   letsAdd(item)
 
       container.appendChild(product_div);
       product_div.appendChild(productTop);
@@ -82,12 +91,19 @@ const product_array = [
       productBottom.appendChild(productBottomH2)
       productBottom.appendChild(productBottomP)
       productBottom.appendChild(productPrice)
-    //   productPrice.appendChild(addTocart)
+      productPrice.appendChild(addTocart)
 
-    // item.forEach(addedToCart.push = item)
+      finalItemId = item
+
   }
 
-  console.log(addedToCart)
+  //eventlistener for add to cart button
+//   const addTocart = document.getElementsByClassName('product_div_add')
+//   addTocart.addEventListener('click', ()=>{
+//       console.log('button clicked')
+//   })
+console.log(finalItemId)
+
 
 // using the product_array to render our products
   product_array.forEach(product => {
