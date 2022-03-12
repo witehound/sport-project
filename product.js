@@ -119,6 +119,56 @@ const product_array = [
   }
 
 
+  const renderToCompare = (item,container) => {
+    const letsCompare = document.createElement('div')
+    letsCompare.setAttribute('class','lets_compare')
+
+    const productTop = document.createElement('div')
+      productTop.setAttribute('class', 'product_div_top')
+
+      const productImage = document.createElement('img')
+      productImage.setAttribute('class', 'product_div_image')
+      productImage.setAttribute('src', item.image)
+      
+
+      const productBottom = document.createElement('div')
+      productBottom.setAttribute('class', 'product_div_buttom')
+     
+      const productBottomH2 = document.createElement('h2')
+      productBottomH2.setAttribute('class', 'product_div_buttom_h2')
+      productBottomH2.innerText = item.name;
+
+      const productBottomP = document.createElement('h4')
+      productBottomP.setAttribute('class', 'product_div_buttom_h4')
+      productBottomP.innerText = item.brand;
+
+      const productPrice = document.createElement('p')
+      productPrice.setAttribute('class','product_div_price')
+      productPrice.innerText = item.price;
+
+      const productColor = document.createElement('h2')
+      productColor.setAttribute('class','product_div_color')
+      productColor.innerText = item.color;
+
+      const productStatus = document.createElement('h2')
+      productStatus.setAttribute('class','product_div_status')
+      productStatus.innerText = item.status;
+
+
+      container.appendChild(letsCompare)
+      letsCompare.appendChild(productTop);
+      productTop.appendChild(productImage)
+      letsCompare.appendChild(productBottom);
+      productBottom.appendChild(productBottomH2)
+      productBottom.appendChild(productBottomP)
+      productBottom.appendChild(productPrice)
+      productBottom.appendChild(productColor)
+      productBottom.appendChild(productStatus)
+
+
+  }
+
+
 
 // using the product_array to render our products on start
   product_array.forEach(product => {
@@ -162,5 +212,8 @@ const product_array = [
   
 // to compare
 compareStatic.addEventListener('click',()=> {
-  console.log(forToCompare)
+  renderContainer.innerHTML = ''
+  forToCompare.forEach(product=>{
+    renderToCompare(product,renderContainer)
+  })
 })
