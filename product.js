@@ -152,7 +152,7 @@ const product_array = [
 
       const productStatus = document.createElement('h2')
       productStatus.setAttribute('class','product_div_status')
-      productStatus.innerText = item.status;
+      productStatus.innerText = item.status  ;
 
 
       container.appendChild(letsCompare)
