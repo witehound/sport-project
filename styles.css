@@ -44,6 +44,7 @@ body{
     padding: 10px;
     border-radius: 0.2rem;
     background-color: bisque;
+    margin: 10px;
 }
 
 img{
@@ -78,4 +79,11 @@ img{
     font-weight: 100;
     display: flex;
     justify-content: space-between;
+}
+
+.compare{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
