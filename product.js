@@ -80,16 +80,17 @@ const product_array = [
       toCompare.addEventListener('click',()=>{
         if(forToCompare.length < 2){
           forToCompare.push(item)
-          console.log(push)
           if(forToCompare.length > 1){
-            if(forToCompare[0].name === forToCompare[1].name){
-              forToCompare.splice(forToCompare[0])
-              console.log(forToCompare[1])
+            if(forToCompare[1].name === forToCompare[0].name){
+              forToCompare.pop()
             }
           }
       }else{
         forToCompare.shift()
         forToCompare.push(item)
+        if(forToCompare[1].name === forToCompare[0].name){
+          forToCompare.pop()
+        }
       }}
       )
 
