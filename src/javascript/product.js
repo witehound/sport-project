@@ -8,6 +8,9 @@ const underArmour = document.querySelector('.underArmour');
 const allbrands = document.querySelector('.allbrands');
 const cart = document.querySelector('.cart');
 const compareStatic = document.querySelector('.compare_static')
+const cartNumber = document.querySelector('.cart_number')
+const cartText = document.querySelector('.cart_text')
+ 
 
 
 
@@ -72,11 +75,11 @@ const product_array = [
 
       const productPrice = document.createElement('h2')
       productPrice.setAttribute('class','product_div_price')
-      productPrice.innerText = item.price;
+      productPrice.innerText = `$ ${item.price}`;
 
       const toCompare = document.createElement('button')
       toCompare.setAttribute('class', 'to_compare')
-      toCompare.innerText = 'Compare'
+      toCompare.innerText = 'Selcet to Compare'
       toCompare.addEventListener('click',()=>{
         if(forToCompare.length < 2){
           forToCompare.push(item)
@@ -99,6 +102,13 @@ const product_array = [
       addTocart.innerText = '+'
       addTocart.addEventListener('click',()=>{
         addedToCart.push(item)
+        if (addedToCart.length < 2)
+        {
+          cartText.innerHTML =   'item added'
+        }else{
+          cartText.innerHTML =   'items added'
+        }
+        cartNumber.innerText = addedToCart.length
       })
 
       if(item.state === ""){
