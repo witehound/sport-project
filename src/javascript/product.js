@@ -308,29 +308,7 @@ const product_array = [
           forToCompare.pop()
         }
       }
-
-
-      if(item.name !== forToCompare[0].name){
-        item.toCompareState === false
-      }
-
-      if(forToCompare.length > 1 
-        && item.name !== forToCompare[1].name){
-        item.toCompareState === false
-      }
-      
-
-      if(item.toCompareState === false){
-        toCompare.innerText = 'Selcet to Compare'
-        toCompare.style.backgroundColor = 'white'
-        toCompare.style.color = 'black'
-        toCompare.style.height = '26px'
-      }else{
-        toCompare.style.backgroundColor = 'black'
-        toCompare.style.color = 'white'
-        toCompare.innerText = 'Selected'
-      }
-      console.log(item.toCompareState)
+    
     }
       )
 
