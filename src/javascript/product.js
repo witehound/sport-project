@@ -357,7 +357,7 @@ const product_array = [
       
 
       const productBottom = document.createElement('div')
-      productBottom.setAttribute('class', 'product_div_buttom')
+      productBottom.setAttribute('class', 'product_div_buttom_compare')
      
       const productBottomH2 = document.createElement('h2')
       productBottomH2.setAttribute('class', 'product_div_buttom_h2')
@@ -371,13 +371,13 @@ const product_array = [
       productPrice.setAttribute('class','product_div_price')
       productPrice.innerText = item.price;
 
-      const productColor = document.createElement('h2')
+      const productColor = document.createElement('h4')
       productColor.setAttribute('class','product_div_color')
       productColor.innerText = item.color;
 
       const productStatus = document.createElement('h2')
       productStatus.setAttribute('class','product_div_status')
-      productStatus.innerText = item.status  ;
+      productStatus.innerText = item.about  ;
 
 
       container.appendChild(letsCompare)
