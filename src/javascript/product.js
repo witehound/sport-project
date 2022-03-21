@@ -317,12 +317,7 @@ const product_array = [
       addTocart.innerText = '+'
       addTocart.addEventListener('click',()=>{
         addedToCart.push(item)
-        if (addedToCart.length < 2)
-        {
-          cartText.innerHTML =   'item added'
-        }else{
-          cartText.innerHTML =   'items added'
-        }
+        console.log(addedToCart.length)
         cartNumber.innerText = addedToCart.length
       })
 
