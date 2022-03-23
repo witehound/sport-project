@@ -13,6 +13,7 @@ const cartText = document.querySelector('.cart_text')
  
 
 
+//comments will be added
 
 // an array of objects for producst
 const product_array = [
