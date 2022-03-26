@@ -13,7 +13,7 @@ const cartText = document.querySelector('.cart_text')
  
 
 
-//uml will be added
+//uml will be added saturday
 
 // an array of objects for producst
 const product_array = [
