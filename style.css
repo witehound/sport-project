@@ -157,7 +157,6 @@ body {
   display: none;
 }
 
-
 @media only screen and (max-width: 650px) {
   .big-img {
     display: none;
