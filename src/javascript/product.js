@@ -351,7 +351,7 @@ const renderAnItem = (item, container) => {
   productPrice.appendChild(addTocart);
 };
 
-console.log('progres2')
+console.log('no p walah')
 
 const renderToCompare = (item, container) => {
   const letsCompare = document.createElement("div");
