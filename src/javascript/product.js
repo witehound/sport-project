@@ -352,6 +352,8 @@ const renderAnItem = (item, container) => {
 };
 
 //linux
+//cp
+//mv
 
 
 const renderToCompare = (item, container) => {
