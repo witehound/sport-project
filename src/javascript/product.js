@@ -351,6 +351,8 @@ const renderAnItem = (item, container) => {
   productPrice.appendChild(addTocart);
 };
 
+//linux
+
 
 const renderToCompare = (item, container) => {
   const letsCompare = document.createElement("div");
