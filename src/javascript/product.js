@@ -351,11 +351,7 @@ const renderAnItem = (item, container) => {
   productPrice.appendChild(addTocart);
 };
 
-//linux
-//cp
-//mv
-//rm
-//mkdir
+
 
 
 const renderToCompare = (item, container) => {
