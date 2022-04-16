@@ -350,7 +350,7 @@ const renderAnItem = (item, container) => {
   productPrice.appendChild(toCompare);
   productPrice.appendChild(addTocart);
 };
-//day1
+
 
 const renderToCompare = (item, container) => {
   const letsCompare = document.createElement("div");
