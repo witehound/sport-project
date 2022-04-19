@@ -351,6 +351,7 @@ const renderAnItem = (item, container) => {
   productPrice.appendChild(addTocart);
 };
 
+//working on a slients project cant be here rn
 
 const renderToCompare = (item, container) => {
   const letsCompare = document.createElement("div");
